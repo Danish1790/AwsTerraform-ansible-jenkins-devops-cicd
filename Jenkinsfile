@@ -1,7 +1,8 @@
 #!/bin/bash
 set -xe
 
-cd aws-terraform-ansible-jenkins-devops-cicd/Terraform
+git clone https://github.com/Danish1790/Aws_Terraform.git
+cd Aws_Terraform/Terraform
 
 sed -i "s/server_name/${SERVER_NAME}/g" backend.tf
 export TF_VAR_name=${SERVER_NAME}

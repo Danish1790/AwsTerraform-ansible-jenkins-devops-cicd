@@ -11,7 +11,7 @@ terraform init
 terraform plan
 terraform $TERRAFORM_ACTION -auto-approve
 
-sleep 120
+sleep 125
 
 if [ $TERRAFORM_ACTION = "destroy" ]; then
 	exit 0

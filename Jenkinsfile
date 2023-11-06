@@ -11,6 +11,7 @@ terraform init
 terraform plan
 terraform $TERRAFORM_ACTION -auto-approve
 
+//set time of 120 sec for ec2 instance to be created
 sleep 125
 
 if [ $TERRAFORM_ACTION = "destroy" ]; then
